@@ -1,24 +1,22 @@
-package Prueba_2;
-
 public class Cuenta_bancaria
 {
     String titular;
-    float saldo;
+    long saldo;
     
-    float depositar()
+    long depositar()
     {
         System.out.print("Ingrese la cantidad a depositar: $");
-        float cantidad = Float.parseFloat(System.console().readLine());
+        long cantidad = Long.parseLong(System.console().readLine());
         
         saldo += cantidad;
         
         return saldo;
     }
     
-    float retirar()
+    long retirar()
     {
         System.out.print("Ingrese la cantidad a retirar: $");
-        float retiro = Float.parseFloat(System.console().readLine());
+        long retiro = Long.parseLong(System.console().readLine());
         
         if(retiro <= saldo)
         {
@@ -35,11 +33,11 @@ public class Cuenta_bancaria
     
     void consultar_saldo()
     {
-        System.out.println("El saldo de la cuenta de " + titular + " es de: $" + saldo);
+        System.out.println("El saldo de la cuenta de " + this.titular + " es de: $" + this.saldo);
     }
     
     //Constructor de la clase Cuenta_bancaria
-    public Cuenta_bancaria(String titular, float saldo)
+    public Cuenta_bancaria(String titular, long saldo)
     {
         this.titular = titular;
         this.saldo = saldo;

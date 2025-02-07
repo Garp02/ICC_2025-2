@@ -1,10 +1,9 @@
-package Prueba_2;
-public class Banco
+public class Main
 {
     public static void main(String args[])
     {
         //Creamos un objeto de la clase Cuenta_bancaria
-        Cuenta_bancaria cuenta1 = new Cuenta_bancaria("Juan Pérez", 1000.0f);
+        Cuenta_bancaria cuenta1 = new Cuenta_bancaria("Juan Pérez", 10000);
         
         while(true)
         {
