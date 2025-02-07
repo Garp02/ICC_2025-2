@@ -47,8 +47,8 @@ public class coche
     public void mostrar_informacion()
     {
         System.out.println("\nMarca: " + marca);
-        System.out.println("\nModelo: " + modelo);
-        System.out.println("\nAño: " + year);
-        System.out.println("\nVelocidad: " + this.velocidad + " km/h");
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Año: " + year);
+        System.out.println("Velocidad: " + this.velocidad + " km/h\n");
     }
 }
