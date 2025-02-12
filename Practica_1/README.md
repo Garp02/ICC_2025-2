@@ -30,9 +30,5 @@ String binario = Integer.toBinaryString(numero);
 
 En caso de que el usuario quiera ingresar una opcion no valida, el programa le mostrará un mensaje de error y finalizara. 
 
-Decidi usar la estructura switch porque es más clara que tener un if, 4 else if y un else para el caso por default.
-En lugar de pedir los numeros reales fuera del switch, decidi pedirlos en cada uno de los casos para que en el caso default 
-ni siquiera pida los numeros, solo finalice. 
-
 
 PD. Me da ansiedad no meter acentos.

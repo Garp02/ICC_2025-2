@@ -30,10 +30,9 @@ public class Main
         
         int opcion = scanner.nextInt();
         
-        switch(opcion)
+        if (opcion == 1)
         {
-            //Suma
-            case 1:
+            // Suma
             System.out.print("Ingresa un número real: ");
             double numero1 = scanner.nextDouble();
             
@@ -41,40 +40,40 @@ public class Main
             double numero2 = scanner.nextDouble();
             
             System.out.println("\nLa suma de " + numero1 + " y " + numero2 + " es: " + (numero1 + numero2) + "\n");
-            
-            break;
-            
-            //Resta
-            case 2:
+        }
+        
+        else if (opcion == 2)
+        {
+            // Resta
             System.out.print("Ingresa un número real: ");
-            numero1 = scanner.nextDouble();
+            double numero1 = scanner.nextDouble();
             
             System.out.print("Ingresa un número real: ");
-            numero2 = scanner.nextDouble();
+            double numero2 = scanner.nextDouble();
             
             System.out.println("\nLa resta de " + numero1 + " y " + numero2 + " es: " + (numero1 - numero2) + "\n");
-            
-            break;
-            
-            //Multiplicación
-            case 3:
+        }
+        
+        else if (opcion == 3)
+        {
+            // Multiplicación
             System.out.print("Ingresa un número real: ");
-            numero1 = scanner.nextDouble();
+            double numero1 = scanner.nextDouble();
             
             System.out.print("Ingresa un número real: ");
-            numero2 = scanner.nextDouble();
+            double numero2 = scanner.nextDouble();
             
             System.out.println("\nLa multiplicación de " + numero1 + " y " + numero2 + " es: " + (numero1 * numero2) + "\n");
-            
-            break;
-            
-            //División
-            case 4:
+        }
+        
+        else if (opcion == 4)
+        {
+            // División
             System.out.print("Ingresa un número real: ");
-            numero1 = scanner.nextDouble();
+            double numero1 = scanner.nextDouble();
             
             System.out.print("Ingresa un número real: ");
-            numero2 = scanner.nextDouble();
+            double numero2 = scanner.nextDouble();
             
             if (numero2 == 0)
             {
@@ -85,23 +84,23 @@ public class Main
             {
                 System.out.println("\nLa división de " + numero1 + " y " + numero2 + " es: " + (numero1 / numero2) + "\n");
             }
-            
-            break;
-            
-            case 5:
+        }
+        
+        else if (opcion == 5)
+        {
+            // Binario
             System.out.print("Ingrese un número entero: ");
             int numero = scanner.nextInt();
             
             String binario = Integer.toBinaryString(numero);
             
             System.out.println("\nEl número " + numero + " en binario es: " + binario + "\n");
-            
-            break;
-            
-            //En caso de que el niño salvaje introduzca otra cosa
-            default:
+        }
+        
+        else
+        {
+            // Opción no válida
             System.out.println("\nError: Opción no válida.\n");
-            break;
         }
         
         scanner.close();
