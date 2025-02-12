@@ -8,11 +8,11 @@ Numero de cuenta: 424106083
 
 Fecha: 11 de febrero de 2025
 
-En esta practica se hizo una calculadora con cinco opciones; suma, resta, multiplicacion, division y pasar a binarios.
+En esta practica se hizo una calculadora con cinco opciones; suma, resta, multiplicacion, division y pasar a binario.
 Expliquemos paso por paso. 
 
 
-Al ejecutar el programa se mostra el mensaje de bienvenida con una calculadora y seran visibles las cinco opciones 
+Al ejecutar el programa se mostrará el mensaje de bienvenida con una calculadora y seran visibles las cinco opciones 
 mencionadas antes para el usuario. 
 
 En caso que ingrese la opcion 1, el programa le pedira al usuario ingresar dos numeros reales y los sumara, despues
