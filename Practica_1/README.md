@@ -1,7 +1,11 @@
-Programa: practica 1
+Practica 1
+
 Descripcion: calculadora basica de cinco opciones
+
 Autor: Ibrahim Munive Ramirez
+
 Numero de cuenta: 424106083
+
 Fecha: 11 de febrero de 2025
 
 En esta practica se hizo una calculadora con cinco opciones; suma, resta, multiplicacion, division y pasar a binarios.
