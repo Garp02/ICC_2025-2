@@ -1,6 +1,6 @@
 Programa: practica 1
 Descripcion: calculadora basica de cinco opciones
-Autor: Ibrahim Muive Ramirez
+Autor: Ibrahim Munive Ramirez
 Numero de cuenta: 424106083
 Fecha: 11 de febrero de 2025
 
