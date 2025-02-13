@@ -1,9 +1,9 @@
 /*
- * Programa: práctica 1
- * Descripción: Calculadora básica con cinco operaciones
- * Autor: Ibrahim Munive Ramírez
- * Número de cuenta: 424106083
- * Fecha: 11 de febrero de 2025
+Programa: práctica 1
+Descripción: Calculadora básica con cinco operaciones
+Autor: Ibrahim Munive Ramírez
+Número de cuenta: 424106083
+Fecha: 11 de febrero de 2025
  */
 
 package Practica_1;
