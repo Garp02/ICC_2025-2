@@ -37,9 +37,4 @@ variable tipo String. Así que en lugar de realizar el proceso anterior, solo se
 
 String binario = Integer.toBinaryString(numero); 
 
-
 En caso de que el usuario quiera ingresar una opción no definida, el programa le mostrará un mensaje de error y finalizara. 
-
-Decidí usar la estructura switch porque es más clara que tener un if, 4 else if y un else para el caso por default.
-En lugar de pedir los números reales fuera del switch, decidí pedirlos en cada uno de los casos para que en el caso default 
-ni siquiera pida los números, solo finalice.
