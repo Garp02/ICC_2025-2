@@ -3,7 +3,7 @@ Programa: práctica 1
 Descripción: Calculadora básica con cinco operaciones
 Autor: Ibrahim Munive Ramírez
 Número de cuenta: 424106083
-Fecha: 11 de febrero de 2025
+Fecha: 11/02/2025
  */
 
 package Practica_1;
@@ -15,6 +15,7 @@ public class Main
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
+        
         System.out.println("\n==== Calculadora ====\n");
         System.out.println("+-------------------+");
         System.out.println("|                   |");
@@ -22,7 +23,7 @@ public class Main
         System.out.println("|                   |");
         System.out.println("+-------------------+");
         System.out.println("|                   |");
-        System.out.println("| 7  8  9   e  %  + |");
+        System.out.println("| 7  8  9   e  b  + |");
         System.out.println("| 4  5  6   i  x  - |");
         System.out.println("| 1  2  3   0  /  = |");
         System.out.println("+-------------------+\n\n");
