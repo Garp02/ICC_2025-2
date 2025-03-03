@@ -31,16 +31,7 @@ public class Calculadora
     
     public double division(double numero1, double numero2)
     {
-        if(numero2 != 0)
-        {
-            return numero1 / numero2;
-        }
-        
-        else
-        {
-            System.out.println("Error: Operación no definida.");
-            return 0;
-        }
+        return numero1 / numero2;
     }
     
     public String binario(double numero1)

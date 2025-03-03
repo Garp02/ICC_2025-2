@@ -12,24 +12,14 @@ import java.util.Scanner;
 
 public class Main
 {
-    public static void main(String[] args)
+    public static void main(String[] pikachu)
     {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("\n==== Calculadora ====\n");
-        System.out.println("+-------------------+");
-        System.out.println("|                   |");
-        System.out.println("|    Syntax ERROR   |");
-        System.out.println("|                   |");
-        System.out.println("+-------------------+");
-        System.out.println("|                   |");
-        System.out.println("| 7  8  9   e  b  + |");
-        System.out.println("| 4  5  6   i  x  - |");
-        System.out.println("| 1  2  3   0  /  = |");
-        System.out.println("+-------------------+\n\n");
-        System.out.print("Operaciones disponibles:\n1. Suma\n2. Resta\n3. Multiplicación\n4. División\n5. Binario\n\nElige una opción: ");
+        mostrarMenu(scanner); //Se muestra el menú de opciones
         
         int opcion = scanner.nextInt();  
+        
         if (opcion == 1)
         {
             System.out.print("Ingresa un número real: ");
@@ -42,6 +32,7 @@ public class Main
             System.out.println("\nSe seleccionó la operación suma.\n");
             System.out.println(numero1 + " + " + numero2 + " = " + calculadora.suma(numero1, numero2));
         }
+        
         else if (opcion == 2)
         {
             System.out.print("\nIngresa un número real: ");
@@ -54,6 +45,7 @@ public class Main
             System.out.println("\nSe seleccionó la operación resta.\n");
             System.out.println(numero1 + " - " + numero2 + " = " + calculadora.resta(numero1, numero2));
         }
+        
         else if (opcion == 3)
         {
             System.out.print("\nIngresa un número real: ");
@@ -66,6 +58,7 @@ public class Main
             System.out.println("\nSe seleccionó la operación multiplicación.\n");
             System.out.println(numero1 + " x " + numero2 + " = " + calculadora.multiplicacion(numero1, numero2));
         }
+        
         else if (opcion == 4)
         {
             System.out.print("\nIngresa un número real: ");
@@ -76,8 +69,17 @@ public class Main
             
             Calculadora calculadora = new Calculadora(numero1, numero2);
             System.out.println("\nSe seleccionó la operación división.\n");
-            System.out.println(numero1 + " / " + numero2 + " = " + calculadora.division(numero1, numero2));
+            if (numero2 != 0)
+            {
+                System.out.println(numero1 + " / " + numero2 + " = " + calculadora.division(numero1, numero2));
+            }
+            
+            else
+            {
+                System.out.println("Error: Operación no definida.");
+            }
         }
+        
         else if (opcion == 5)
         {
             System.out.print("\nIngresa un número entero: ");
@@ -90,9 +92,26 @@ public class Main
         
         else
         {
-            System.out.println("\nError: Opción no válida.\n");
+            System.out.println("\nError: Opción inválida.\n");
         }
         
         scanner.close();
+    }
+
+    // Método para mostrar el menú de opciones
+    private static void mostrarMenu(Scanner scanner)
+    {
+        System.out.println("\n ==== Calculadora ====\n");
+        System.out.println("+-------------------+");
+        System.out.println("|                   |");
+        System.out.println("|    Syntax ERROR   |");
+        System.out.println("|                   |");
+        System.out.println("+-------------------+");
+        System.out.println("|                   |");
+        System.out.println("| 7  8  9   e  b  + |");
+        System.out.println("| 4  5  6   i  x  - |");
+        System.out.println("| 1  2  3   0  /  = |");
+        System.out.println("+-------------------+\n\n");
+        System.out.print("Operaciones disponibles\n1. Suma\n2. Resta\n3. Multiplicación\n4. División\n5. Binario\n\nElige una opción: ");
     }
 }
