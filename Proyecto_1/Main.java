@@ -20,7 +20,7 @@ public class Main
         double mediaCapacidad = botella.capacidad() / 2;
         botella.rellena(mediaCapacidad);
         Recipiente botellaJusta = botella.crearContenedorJusto();
-
+        
         System.out.println(tambo.muestra());
 
         System.out.println(botella.muestra());
@@ -28,7 +28,8 @@ public class Main
         System.out.println(botellaJusta.muestra());
 
         Recipiente tina = new Recipiente("Tina", 50, 200);
-
+        System.out.println("Se ha creado un nuevo recipiente llamado tina.");
+        
         double tinaCompleta = tina.capacidad();
         tina.rellena(tinaCompleta);        
         System.out.println(tina.muestra());
@@ -54,7 +55,5 @@ public class Main
 
         System.out.print("¿La tina tiene más capacidad restante que la cubeta? ");
         System.out.println(tina.cabeMas(cubeta));
-
-
     }
 }

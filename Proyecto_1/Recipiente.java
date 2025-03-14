@@ -1,10 +1,14 @@
 public class Recipiente implements ServiciosRecipiente 
 {
+    private static final String RESET = "\u001B[0m";
+    private static final String GREEN = "\u001B[32m";
+    private static final String RED = "\u001B[31m";
+    private static final double PI = 3.141592653589793;
+
     private String nombreRecipiente;
     private double radio;
     private double altura;
     private double capacidadActual;
-    private static final double PI = 3.141592653589793;
 
     //Constructor
     public Recipiente(String nombreRecipiente, double radio, double altura)
@@ -63,7 +67,7 @@ public class Recipiente implements ServiciosRecipiente
         this.capacidadActual = capacidadActual;
     }
     
-    // Métodos de la clase a implementar
+    //? Métodos de la clase a implementar
     public double capacidad()
     {
         double capacidad = PI * (this.radio * this.radio) * this.altura;
@@ -157,15 +161,15 @@ public class Recipiente implements ServiciosRecipiente
             "\n+---------------------------------------+\n" +
             "| %-37s |\n" +
             "+-------------------------+-------------+\n" +
-            "| Radio (cm)              |%12.3f |\n" +
-            "| Altura (cm)             |%12.3f |\n" +
-            "| Capacidad (cm3)         |%12.3f |\n" +
+            "| Radio (cm)              |%s%12.3f%s |\n" +
+            "| Altura (cm)             |%s%12.3f%s |\n" +
+            "| Capacidad (cm3)         |%s%12.3f%s |\n" +
             "| Cantidad actual (cm3)   |%12.3f |\n" +
-            "| Cantidad restante (cm3) |%12.3f |\n" +
+            "| Cantidad restante (cm3) |%s%12.3f%s |\n" +
             "| ¿Está lleno?            |%12b |\n" +
             "| ¿Está vacío?            |%12b |\n" +
             "+-------------------------+-------------+\n",
-            this.nombreRecipiente, this.radio, this.altura, capacidad(), this.capacidadActual, capacidadRestante(), estaLleno(), estaVacio()
+            this.nombreRecipiente, GREEN, this.radio, RESET, GREEN, this.altura, RESET, GREEN, capacidad(), RESET, this.capacidadActual, RED, capacidadRestante(), RESET, estaLleno(), estaVacio()
         );
     }
 }
