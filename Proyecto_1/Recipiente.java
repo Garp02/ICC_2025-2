@@ -4,7 +4,7 @@ public class Recipiente implements ServiciosRecipiente
     private double radio;
     private double altura;
     private double capacidadActual;
-    public static final float PI = 3.1416f;
+    private static final double PI = 3.141592653589793;
 
     //Constructor
     public Recipiente(String nombreRecipiente, double radio, double altura)
