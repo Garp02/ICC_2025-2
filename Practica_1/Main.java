@@ -5,9 +5,6 @@ Autor: Ibrahim Munive Ramírez
 Número de cuenta: 424106083
 Fecha: 11/02/2025
  */
-
-package Practica_1;
-
 import java.util.Scanner;
 
 public class Main
