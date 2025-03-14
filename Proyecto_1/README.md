@@ -1,6 +1,7 @@
 # Proyecto 1. Implementación de la interfaz ServiciosRecipiente.java
 
 Autor: Ibrahim Munive Ramírez
+
 Boleta: 424106083
 
 ## Descripción del proyecto
