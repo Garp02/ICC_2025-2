@@ -9,19 +9,19 @@ Se implementaron los métodos de la interfaz `ServiciosRecipiente.java` en la cl
 
 ### Métodos implementados:
 
-1. **´public double capacidad´**
-2. **´public double capacidadRestante´**
-3. **´public boolean estaVacio´**
-4. **´public boolean estaLleno´**
-5. **´public double rellena´**
-6. **´public double vacia´**
-7. **´public void vierte´**
-8. **´public boolean mismasDimensiones´**
-9. **´public boolean mismaCapacidad´**
-10. **´public boolean contieneMas´**
-11. **´public boolean cabeMas´**
-12. **´public Recipiente creaContenedorJusto´**
-13. **´public String muestra´**
+1. **public double capacidad**
+2. **public double capacidadRestante**
+3. **public boolean estaVacio**
+4. **public boolean estaLleno**
+5. **public double rellena**
+6. **public double vacia**
+7. **public void vierte**
+8. **public boolean mismasDimensiones**
+9. **public boolean mismaCapacidad**
+10. **public boolean contieneMas**
+11. **public boolean cabeMas**
+12. **public Recipiente creaContenedorJusto**
+13. **public String muestra**
 
 Estos 13 métodos están definidos e implementados en la clase `Recipiente.java`, y se utilizan para realizar diversas operaciones sobre un recipiente, como calcular su capacidad, verificar si está vacío o lleno, rellenarlo, vaciarlo, comparar su capacidad con otro recipiente, y más.
 
