@@ -12,6 +12,7 @@ public class Main
     public static void main(String[] reloj)
     {
         int opcionRepetir = 1;
+        Scanner scanner = new Scanner(System.in);
         Reloj reloj1 = new Reloj(12, 0, 0);
 
         do
@@ -25,7 +26,7 @@ public class Main
             System.out.println("\n4. Establecer hora");
 
             System.out.print("\nEscoja una opción [1, 2, 3, 4]: ");
-            Scanner scanner = new Scanner(System.in);
+            
             int opcion = scanner.nextInt();
 
             switch (opcion)
@@ -83,5 +84,6 @@ public class Main
             opcionRepetir = scanner.nextInt();
         }
         while (opcionRepetir != 0);
+        scanner.close();
     }
 }

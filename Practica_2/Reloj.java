@@ -57,26 +57,23 @@ public class Reloj
 
     public void avanzarMinuto(int minutos)
     {
-        setMinuto((this.minuto + minutos) % 60);
-        
-        if(this.minuto == 59)
+        setMinuto(this.minuto + minutos);
+
+        while(this.minuto >= 60)
         {
+            this.minuto -= 60;
             avanzarHora(1);
         }
     }
 
     public void avanzarSegundo(int segundos)
     {
-        setSegundo((this.segundo + segundos) % 60);
+        setSegundo(this.segundo + segundos);
 
-        if(this.segundo == 59)
+        while(this.segundo >= 60)
         {
+            this.segundo -= 60;
             avanzarMinuto(1);
-
-            if(this.minuto == 59)
-            {
-                avanzarHora(1);
-            }
         }
     }
 
@@ -84,7 +81,7 @@ public class Reloj
     {
         setHora(hora % 24);
         setMinuto(minuto % 60);
-        setSegundo(minuto % 60);
+        setSegundo(segundo % 60);
     }
 
     public String darHora()
