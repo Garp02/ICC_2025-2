@@ -8,9 +8,10 @@ Boleta: 424106083
 
 ## Descripción
 
-En esta práctica se creo un reloj con la capacidad de modificar tanto por separado como individualmente la hora, minuto y segundos. Tanto en el archivo *Main.java* como en el archivo *Reloj.java* se usaron ciclos while y do-while. Además, se le agregó color al reloj para que sea más llamativo y para que se más fácil de leer los cambios.
+En esta práctica se creo un reloj con la capacidad de modificar tanto por separado como individualmente la hora, minuto y segundos.
 
-En el archivo *Main.java* se implementó un menú usando la estructura switch con cuatro diferentes opciones para modificar el reloj. Además, se le agregó una opción para finalizar el programa o seguir ejecutándolo las veces que se quiera.
+Se crearon tres archivos *Main.java* *Reloj.java* *Manecilla.java* para implementar el proyectos. 
+En la clase *Reloj* se implementó el uso de las manecillas de la clase *Manecilla*. Para esto, se tuvo que usar tres instancias de la clase *Manecilla* como atributos de la clase *Reloj*.    
 
 ## Instrucciones de uso
 
