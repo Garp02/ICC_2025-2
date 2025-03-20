@@ -20,7 +20,7 @@ En el archivo *Main.java* se implementó un menú usando la estructura switch co
 4. Sigue las instrucciones en la consola para modificar la hora, minuto y segundos del reloj.
 
 
-## Comandos para subir al repositorio de GitHub
+## Comandos para subir al repositorio de GitHub (usando la terminal)
 
 ![Revisamos el estatus del repositorio](https://github.com/user-attachments/assets/22fb6c35-b967-4865-8955-a5196159aa79)
 
@@ -29,3 +29,4 @@ En el archivo *Main.java* se implementó un menú usando la estructura switch co
 ![Agregamos mensaje de commit](https://github.com/user-attachments/assets/0ca42ecb-9cdb-4aab-b6d3-d6629ae296e6)
 
 ![Subimos los archivos](https://github.com/user-attachments/assets/4f27e8d2-e3b2-4fb0-bae5-682c50485c7f)
+
