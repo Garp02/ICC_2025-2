@@ -22,11 +22,18 @@ En el archivo *Main.java* se implementó un menú usando la estructura switch co
 
 ## Comandos para subir al repositorio de GitHub (usando la terminal)
 
+1. Revisamos el estatus del repositorio
+
 ![Revisamos el estatus del repositorio](https://github.com/user-attachments/assets/22fb6c35-b967-4865-8955-a5196159aa79)
+
+2. Agregamos los archivos de la carpeta actual
 
 ![Agregamos los archivos de la carpeta actual](https://github.com/user-attachments/assets/9c19dc2d-1ae5-4b58-9ee6-3c28776667e1)
 
+3. Agregamos mensaje de commit
+
 ![Agregamos mensaje de commit](https://github.com/user-attachments/assets/0ca42ecb-9cdb-4aab-b6d3-d6629ae296e6)
 
+4. Subimos los archivos al repositorio
 ![Subimos los archivos](https://github.com/user-attachments/assets/4f27e8d2-e3b2-4fb0-bae5-682c50485c7f)
 
