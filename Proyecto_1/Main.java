@@ -19,7 +19,7 @@ public class Main
         tambo.rellena(agua);
         double mediaCapacidad = botella.capacidad() / 2;
         botella.rellena(mediaCapacidad);
-        Recipiente botellaJusta = botella.crearContenedorJusto();
+        Recipiente botellaJusta = botella.creaContenedorJusto();
         
         System.out.println(tambo.muestra());
 

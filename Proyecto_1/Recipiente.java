@@ -147,7 +147,7 @@ public class Recipiente implements ServiciosRecipiente
         return (capacidadRestante() > tambo.capacidadRestante());
     }
 
-    public Recipiente crearContenedorJusto()
+    public Recipiente creaContenedorJusto()
     {
         Recipiente contenedor = new Recipiente(this.nombreRecipiente, this.radio, this.capacidadActual/(PI*(this.radio * this.radio)));
         contenedor.capacidad();
