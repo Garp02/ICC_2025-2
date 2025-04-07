@@ -6,7 +6,7 @@ Número de cuenta: 424106083
 
 ## Documentación de la Clase Mensaje
 
-Esta documentación explica el funcionamiento de los métodos implementados en la clase `Mensaje.java`, que contiene algoritmos para el cifrado y descifrado de mensajes ocultos.
+Esta documentación explica el funcionamiento de los métodos implementados en la clase `Mensaje.java`, para el cifrado y descifrado de mensajes ocultos.
 
 ### Índice
 1. [descifraNulo](#descifranulo)
