@@ -1,5 +1,9 @@
 # Proyecto 2. Estenografía
 
+Autor: Ibrahim Munive Ramírez
+
+Número de cuenta: 424106083
+
 ## Documentación de la Clase Mensaje
 
 Esta documentación explica el funcionamiento de los métodos implementados en la clase `Mensaje.java`, que contiene algoritmos para el cifrado y descifrado de mensajes ocultos.
