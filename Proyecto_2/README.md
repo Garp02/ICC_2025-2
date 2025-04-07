@@ -135,3 +135,13 @@ public static String descifraLetrasMarcadas(String mensaje1, String mensaje2)
 4. Si los caracteres en la misma posición son diferentes, agrega el carácter del primer mensaje al resultado.
 
 **Retorno:** Una cadena con los caracteres del primer mensaje que son diferentes a los del segundo mensaje en la misma posición.
+
+### Inconvenientes
+
+1. Manejo de caracteres especiales: La normalización de textos con acentos y caracteres especiales requirió un tratamiento adicional para garantizar el correcto funcionamiento de los métodos.
+
+2. Detección de límites de palabras: Determinar dónde comienza y termina cada palabra fue complicado. debido a la variedad de signos de puntuación y espacios que pueden aparecer en un texto.
+
+3. Comparación de textos de diferentes longitudes: En los métodos que comparan dos textos, fue necesario implementar lógica adicional para manejar casos donde los textos tienen longitudes diferentes.
+
+4. Ya me harté. 
