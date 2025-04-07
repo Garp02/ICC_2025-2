@@ -62,7 +62,7 @@ public class Main
                 System.out.print("Ingrese el nombre a buscar: ");
                 String nombre = scanner.nextLine();
                 
-                System.out.println("\n¿El mensaje contiene el nombre " + nombre + "?" + (Mensaje.contieneNombre(mensaje3, nombre) ? " Sí" : " No"));
+                System.out.println("\n¿El mensaje contiene el nombre " + nombre + "? " + (Mensaje.contieneNombre(mensaje3, nombre) ? "Sí" : "No"));
 
                 break;
 
