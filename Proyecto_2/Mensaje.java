@@ -109,9 +109,15 @@ public class Mensaje
             {
                 int j = 0;
 
-                while(j < nombre.length() && (i + j) < mensaje.length() && mensaje.charAt(i + j) == nombre.charAt(j)) j++;
+                while(j < nombre.length() && (i + j) < mensaje.length() && mensaje.charAt(i + j) == nombre.charAt(j))
+                {
+                    j++;
+                }
 
-                if(j == nombre.length()) return true;
+                if(j == nombre.length()) 
+                {
+                    return true;
+                }
             }
         }
 
@@ -185,7 +191,7 @@ public class Mensaje
 
     public static String descifraLetrasMarcadas(String mensaje1, String mensaje2)
     {
-        if(mensaje1 == null || mensaje2 == null || mensaje1.isEmpty() || mensaje2.isEmpty())
+        if(mensaje1 == null || mensaje2 == null || mensaje1.length() == 0 || mensaje2.length() == 0)
         {
             return "";
         }
