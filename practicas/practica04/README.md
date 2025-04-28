@@ -1,6 +1,7 @@
 # Práctica 4. Reestructuración del repositorio digital
 
 Autor: Ibrahim Munive Ramírez
+
 Cuenta: 424106083
 
 ## Repositorio GitHub
