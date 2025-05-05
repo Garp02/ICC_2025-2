@@ -1,14 +1,31 @@
 package practicas.practica05;
 
-public class Rectangulo extends FiguraGeometrica
+class Rectangulo extends FiguraGeometrica 
 {
-    public double CalcularArea()
+    private double base;
+    private double altura;
+
+    public Rectangulo(double base, double altura) 
     {
-        return base*altura;
+        this.base = base;
+        this.altura = altura;
     }
 
-    public double CalcularPerimetro()
+    @Override
+    public double calcularArea() 
+    {
+        return base * altura;
+    }
+
+    @Override
+    public double calcularPerimetro() 
     {
         return 2 * (base + altura);
+    }
+
+    @Override
+    public String toString() 
+    {
+        return "Rectángulo [Base = " + base + ", Altura = " + altura + ", Perímetro = " + calcularPerimetro() + ", Área = " + calcularArea() + "]";
     }
 }

@@ -1,14 +1,29 @@
 package practicas.practica05;
 
-public class Cuadrado extends FiguraGeometrica
+class Cuadrado extends FiguraGeometrica 
 {
-    public double CalcularArea()
+    private double lado;
+
+    public Cuadrado(double lado) 
     {
-        return base*base;
+        this.lado = lado;
     }
 
-    public double CalcularPerimetro()
+    @Override
+    public double calcularArea() 
     {
-        return 4 * base;
+        return lado * lado;
+    }
+
+    @Override
+    public double calcularPerimetro() 
+    {
+        return 4 * lado;
+    }
+
+    @Override
+    public String toString() 
+    {  
+        return "Cuadrado [Lado = " + lado + ", Perímetro = " + calcularPerimetro() + ", Área = " + calcularArea() + "]";
     }
 }
