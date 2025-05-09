@@ -16,6 +16,30 @@ public class Main
         Scanner scanner = new Scanner(System.in);
         Reloj reloj1 = new Reloj(0,0,0);
 
+        // Ejemplo de reseteo del reloj usando un ciclo for
+        System.out.println("\n\t\t  Ejemplo de reseteo con ciclo FOR \n");
+        reloj1.fijarHora(23, 59, 50);
+        System.out.println("Hora inicial: " + reloj1.darHora());
+        
+        for(int i = 0; i < 15; i++) 
+        {
+            reloj1.avanzarSegundo(1);
+            System.out.println("Segundo " + (i+1) + ": " + reloj1.darHora());
+        }
+        
+        // Ejemplo de reseteo del reloj usando un ciclo while
+        System.out.println("\n\t\t  Ejemplo de reseteo con ciclo WHILE \n");
+        reloj1.fijarHora(23, 59, 55);
+        System.out.println("Hora inicial: " + reloj1.darHora());
+        
+        int contador = 0;
+        while(contador < 10) 
+        {
+            reloj1.avanzarSegundo(1);
+            System.out.println("Segundo " + (contador+1) + ": " + reloj1.darHora());
+            contador++;
+        }
+
         do
         {
             System.out.println("\n\t\t  Reloj \n");
