@@ -1,150 +1,104 @@
-package Programas.proyectos.proyecto03;
-
-public class ListaLigada
+public class ListaLigada 
 {
-    // Definición de la clase Nodo como clase interna privada
-    private class Nodo
+    private class Nodo 
     {
-        private String elemento;
-        private Nodo siguiente;
+        Carta carta;
+        Nodo siguiente;
 
-        public Nodo(String elemento)
+        Nodo(Carta carta) 
         {
-            this.elemento = elemento;
+            this.carta = carta;
             this.siguiente = null;
-        }
-
-        public String getElemento()
-        {
-            return elemento;
-        }
-
-        public Nodo getSiguiente()
-        {
-            return siguiente;
-        }
-
-        public void setSiguiente(Nodo siguiente)
-        {
-            this.siguiente = siguiente;
         }
     }
 
     private Nodo cabeza;
     private int longitud;
-    
-    // Constructor de la lista ligada.
-    public ListaLigada()
-    {
-        this.cabeza = null;
-        this.longitud = 0;
-    }
 
-    // Inserta un elemento al final de la lista.
-    public void insertar(String elemento) 
+    public void insertar(Carta carta) 
     {
-        Nodo nuevoNodo = new Nodo(elemento);
+        Nodo nuevo = new Nodo(carta);
         if (cabeza == null) 
         {
-            cabeza = nuevoNodo;
-        } 
-        
+            cabeza = nuevo;
+        }
+
         else 
         {
             Nodo actual = cabeza;
-            while (actual.getSiguiente() != null)
+            while (actual.siguiente != null) 
             {
-                actual = actual.getSiguiente();
+                actual = actual.siguiente;
             }
             
-            actual.setSiguiente(nuevoNodo);
+            actual.siguiente = nuevo;
         }
+
         longitud++;
     }
-    
-    // Elimina la primera ocurrencia del elemento especificado.
-    public boolean eliminar(String elemento) 
-    {
-        if (cabeza == null) 
-        {
-            return false;
-        }
 
-        if (cabeza.getElemento() == elemento) 
+    public boolean verificarSecuencia() 
+    {
+        if (cabeza == null || cabeza.siguiente == null) 
         {
-            cabeza = cabeza.getSiguiente();
-            longitud--;
             return true;
         }
-
+    
         Nodo actual = cabeza;
-        while (actual.getSiguiente() != null) 
+    
+        while (actual.siguiente != null) 
         {
-            if (actual.getSiguiente().getElemento() == elemento) 
+            if (actual.carta.aceptarCarta(actual.siguiente.carta) == false) 
             {
-                actual.setSiguiente(actual.getSiguiente().getSiguiente());
-                longitud--;
-                return true;
+                return false;
             }
             
-            actual = actual.getSiguiente();
+            actual = actual.siguiente;
         }
 
-        return false;
-    }
-    
-    // Inserta un elemento en el índice especificado.
-    public boolean insertarIndice(String elemento, int indice) 
-    {
-        // Validar que el índice esté dentro del rango válido
-        if (indice < 0 || indice >= longitud) 
-        {
-            return false;
-        }
-
-        Nodo nuevoNodo = new Nodo(elemento);
-
-        // Caso especial: insertar al inicio
-        if (indice == 0) 
-        {
-            nuevoNodo.setSiguiente(cabeza);
-            cabeza = nuevoNodo;
-            longitud++;
-            return true;
-        }
-
-        // Insertar en una posición intermedia
-        Nodo actual = cabeza;
-        for (int i = 0; i < indice - 1; i++) 
-        {
-            actual = actual.getSiguiente();
-        }
-
-        nuevoNodo.setSiguiente(actual.getSiguiente());
-        actual.setSiguiente(nuevoNodo);
-        longitud++;
         return true;
     }
 
-    // Devuelve una representación en cadena de la lista.
-    public String toString() 
+    public Carta obtenerUltima() 
     {
-        if (cabeza == null) 
-        {
-            return "Lista vacía";
+        if (cabeza == null)
+        { 
+            return null;
         }
 
-        String resultado = "Lista: ";
         Nodo actual = cabeza;
+        
+        while (actual.siguiente != null) 
+        {
+            actual = actual.siguiente;
+        }
+        
+        return actual.carta;
+    }
+
+    public void vaciar() 
+    {
+        cabeza = null;
+        longitud = 0;
+    }
+
+    public void imprimir() 
+    {
+        Nodo actual = cabeza;
+        int i = 1;
         while (actual != null) 
         {
-            resultado += actual.getElemento();
-            if (actual.getSiguiente() != null) 
-            {
-                resultado += " -> ";
-            }
-            actual = actual.getSiguiente();
+            System.out.println(i);
+            actual.carta.imprimir();
+            System.out.println();
+            actual = actual.siguiente;
+            i++;
         }
-        return resultado;
     }
+
+    public int longitud()
+    {
+        return longitud;
+    }
+
 }

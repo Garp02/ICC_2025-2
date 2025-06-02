@@ -1,29 +1,57 @@
-package Programas.proyectos.proyecto03;
-
 import java.util.Scanner;
-// import java.util.Random;
 
-public class Main
+public class Main 
 {
-    public static void main (String[] PikAPerro)
+    public static void main(String[] PickAPerro) 
     {
-        
         Scanner scanner = new Scanner(System.in);
-        int opcionRepeticion = 1;
-        do
+        int jugadores = 0;
+
+        while (true) 
         {
-            System.out.println(" \n\t\tPick-a-Perro\n");
-
-
-
-
-            System.out.print("\n¿Desea volver a jugar? [1 = Sí, 0 = No]: ");
-            opcionRepeticion = scanner.nextInt();
-
-        }
-        while (opcionRepeticion != 0);
+            System.out.println("\t\t Pick A Perro sin perros\n");
+            
+            // String.format
+            // (
+            //     " / \\__\n" +
+            //     "(    @\\___\n" +
+            //     " /         O\n" +
+            //     " /   (_____/\n" +
+            //     "/_____/   U\n" 
+            // );
+            
+            System.out.println(" / \\__");
+            System.out.println("(    @\\___");
+            System.out.println(" /         O");
+            System.out.println("/   (_____/");
+            System.out.println("/_____/   U");
         
-        System.out.println(" \n\t\tGracias por jugar\n");
+            System.out.print("\nIngresa la cantidad de jugadores (1 a 5): ");
+
+            if (scanner.hasNextInt() == true) 
+            {
+                jugadores = scanner.nextInt();
+                
+                if (jugadores >= 1 && jugadores <= 5) 
+                {    
+                    break;
+                }
+                
+                else
+                {
+                    System.out.println("Dato no compatible. El número de jugadores debe ser entre 1 y 5.");
+                }
+            } 
+            
+            else 
+            {
+                System.out.println("Entrada no válida.");
+                scanner.next();
+            }
+        }
+
+        Juego juego = new Juego(jugadores);
+        juego.jugarRonda();
         scanner.close();
     }
 }
