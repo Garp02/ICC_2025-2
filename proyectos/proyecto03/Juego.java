@@ -42,12 +42,13 @@ public class Juego
             else 
             {
                 System.out.println("\nIniciando ronda con " + jugadores + " jugadores (1 humano y " + (jugadores - 1) + " artificiales).\n");
-                
+
+                int[] puntajesArtificiales = new int[jugadores - 1];
                 Thread[] artificiales = new Thread[jugadores - 1];
 
                 for (int i = 0; i < artificiales.length; i++) 
                 {
-                    artificiales[i] = new Thread(new JugadorArtificial(i + 1, mesa));
+                    artificiales[i] = new Thread(new JugadorArtificial(i + 1, mesa, puntajesArtificiales, i));
                     artificiales[i].start();
                 }
                 
@@ -63,6 +64,11 @@ public class Juego
                     {
                         System.out.println("Error esperando al jugador artificial #" + (i + 1));
                     }
+                }
+
+                for (int i = 0; i < jugadores - 1; i++) 
+                {
+                    System.out.println("Jugador artificial #" + (i + 1) + " obtuvo " + puntajesArtificiales[i] + " cartas.");
                 }
             }
 
@@ -194,5 +200,7 @@ public class Juego
 
         System.out.println("\nTu secuencia final fue:");
         secuenciaJugador.imprimir();
+        System.out.println("Jugador humano obtuvo " + secuenciaJugador.longitud() + " cartas.");
+
     }
 }

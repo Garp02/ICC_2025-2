@@ -4,13 +4,11 @@ Autor: Ibrahim Munive Ramírez
 
 Cuenta: 424106083
 
-Bienvenido a **Pick A Perro sin perros**, un proyecto en Java donde un jugador humano compite contra jugadores artificiales para formar la mejor secuencia de cartas según reglas específicas. Este juego se ejecuta por consola y emplea estructuras dinámicas, hilos, y principios sólidos de programación orientada a objetos.
-
 ---
 
 ## 🎯 Objetivo del juego
 
-Formar una **secuencia válida** de cartas, donde **cada carta difiera de la anterior en una sola característica**. El jugador humano y los bots toman cartas desde una **mesa compartida**. Al final del turno, si su secuencia no es válida, ¡pierden todas sus cartas!
+Formar una **secuencia válida** de cartas, donde **cada carta difiera de la anterior en una sola característica**. El jugador humano y los artificiales toman cartas desde una **mesa compartida**. Al final del turno, si su secuencia no es válida, ¡pierden todas sus cartas!
 
 ---
 
@@ -24,6 +22,17 @@ Formar una **secuencia válida** de cartas, donde **cada carta difiera de la ant
 6. Finaliza tu turno con `-1`.
 7. Ganas si tu secuencia es válida **y no dejaste cartas compatibles en la mesa**.
 
+---
+
+## Funcionamiento 
+
+Esta implemnetación del juego se basó en cambiar las tarjetas de perros por arreglos de caracteres. En estos arreglos se consideran cinco posiciones representando
+las características cambiantes de las tarjetas. Por simplicidad, solo tendremos dos caracteres, "o" o "x".
+
+Se hizo la implementación concurrente del juego, es decir, no existe una versión de juego por turnos. 
+
+
+Agradecimientos especiales a ChatGPT por ayudar con el formato del _README.md_. 
 ---
 
 ## 🧩 Estructura del Proyecto
@@ -83,16 +92,6 @@ Formar una **secuencia válida** de cartas, donde **cada carta difiera de la ant
 - Validación justa: puedes insertar cualquier carta, pero se evalúa **al final** si fuiste coherente.
 
 ---
-
-## 💡 Posibles mejoras (que no pienso hacer)
-
-- Puntaje acumulado por jugador.
-- Jugador contra jugador humano.
-- Interfaz gráfica (JavaFX/Swing).
-- Guardado de partidas o estadísticas.
-
----
-
 
 ## ❌ Inconvenientes
 

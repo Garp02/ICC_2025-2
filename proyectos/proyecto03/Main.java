@@ -11,15 +11,6 @@ public class Main
         {
             System.out.println("\t\t Pick A Perro sin perros\n");
             
-            // String.format
-            // (
-            //     " / \\__\n" +
-            //     "(    @\\___\n" +
-            //     " /         O\n" +
-            //     " /   (_____/\n" +
-            //     "/_____/   U\n" 
-            // );
-            
             System.out.println(" / \\__");
             System.out.println("(    @\\___");
             System.out.println(" /         O");

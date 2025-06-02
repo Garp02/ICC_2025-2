@@ -1,13 +1,17 @@
 public class JugadorArtificial implements Runnable 
 {
     private int id;
+    private int[] puntajes;
+    private int indicePuntaje;
     private Carta[] mesa;
     private ListaLigada secuencia;
 
-    public JugadorArtificial(int id, Carta[] mesa) 
+    public JugadorArtificial(int id, Carta[] mesa, int[] puntajes, int indicePuntaje) 
     {
         this.id = id;
         this.mesa = mesa;
+        this.puntajes = puntajes;
+        this.indicePuntaje = indicePuntaje;
         this.secuencia = new ListaLigada();
     }
 
@@ -72,7 +76,11 @@ public class JugadorArtificial implements Runnable
 
         System.out.println("Secuencia final del jugador artificial #" + id + ":");
         secuencia.imprimir();
-        System.out.println("Jugador artificial #" + id + " obtuvo " + secuencia.longitud() + " cartas.");
+        
+        int cartasObtenidas = secuencia.longitud();
+        puntajes[indicePuntaje] = cartasObtenidas;
+        System.out.println("Jugador artificial #" + id + " obtuvo " + cartasObtenidas + " cartas.");
+
         System.out.println("---- Fin del turno del jugador artificial #" + id + " ----\n");
 
     }
