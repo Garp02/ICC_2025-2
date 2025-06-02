@@ -102,6 +102,7 @@ Durante el desarrollo del proyecto se presentaron varios retos:
 - ❗ Hubo dificultad para imprimir cartas en formato tablero y con estética clara, lo cual se resolvió (creo) generando líneas simultáneas por filas.
 - ❗ Fue necesario aprender a sincronizar hilos para evitar que múltiples jugadores artificiales accedieran a la misma carta simultáneamente.
 - ❗ Se mejoró la visualización de cartas alternando colores y numerando cartas para facilitar la jugabilidad.
+- ❗Se traslapaban los textos, se mezclaban y era difícil entender qué sucedía.  
 
 
 _Disfruta programando como jugando._
