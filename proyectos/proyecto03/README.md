@@ -33,6 +33,7 @@ Se hizo la implementación concurrente del juego, es decir, no existe una versi�
 
 
 Agradecimientos especiales a ChatGPT por ayudar con el formato del _README.md_. 
+
 ---
 
 ## 🧩 Estructura del Proyecto
